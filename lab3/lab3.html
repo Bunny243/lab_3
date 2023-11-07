@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            /*Gambar background belakang*/
+            background-image: url(image/Bianco\ Laser\ _\ Ollin\ Stone\ _\ Marble\ _\ Natural\ Stone_\ Countertops\ _.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        
+        }
+
+       .wrapper {
+            display:flex;
+            flex-direction: column;
+            min-height: 400px;
+            background-color: transparent;
+            width: 80%;
+            margin: auto;  
+        }
+
+        .banner{
+
+            display:flex;
+            flex-direction: column;
+            min-height: 50px;
+            background-color: lightgrey;
+            justify-items: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            color: black;
+            
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+            color: burlywood;
+            font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navigation{
+
+            display:flex;
+            flex-direction: row;
+            min-height: 20px;
+            background-color: darkgoldenrod;
+            justify-items: center;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: space-between;
+
+        }
+
+        .main {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+
+            display:flex;
+            flex-direction: column;
+            background-color: lightgoldenrodyellow;
+            flex-basis: 20%;
+            /* min-height: 10px; */
+            margin-top: 10px;
+
+        }
+
+       .body {
+
+            display:flex;
+            flex-direction: row;
+            background-color: lightgoldenrodyellow;
+            flex-basis: 75%;
+            margin-top: 10px;
+
+        }
+
+        .footer {
+
+            display:flex;
+            flex-direction: column;
+            background-color: darkgoldenrod;
+            margin-top: 10px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .body > p {
+            order: 1;
+            /*flex-grow: 1;
+            margin-right: 70px;*/
+        }
+
+        .body > img {
+            
+            order: 2;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="banner">
+            <img src="image/Working On laptop In Bed.jpeg" alt="">
+            <div class="centered">Saturday Night</div>
+        </div>
+        <div class="navigation">
+            <a href="campusLife.html">Campus Life</a>
+            <a href="biodata.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <p>I consider myself to be quite the individual. My nature leans toward areserved demeanor. Where I prefer to take measure for my action and I have a good listening skill.</p>
+
+            </div>
+            <div class="body">
+                <p>In my free time I love to spend those times on my hobbies where I can focus on improving myself and have a laidback moments where I can be myself. I love to read books and I'm quite an avid reader as I read most genre except for horror. Why? Because I can't handle ghost and scary. Those creatures in ghost story offent time has an unexplainable apperance which frighten me.</p>
+                <img src="image/Chapitre 4.jpeg" alt="">
+            </div>
+            
+        </div>
+        
+        
+        <div class="footer">
+            &copy Auni Zahirah Mohamad Zahir
+        </div>
+    </div>
+</body>
+</html>
